@@ -1,79 +1,94 @@
 * {
     margin: 0;
+    font-family: 'Slabo 27px', serif;
 }
 
 .wip {
     border: 1px solid red;
 }
 
+#main {
+    background-color: white;
+    margin: 0 20vw 0 10vw;
+}
+
+body {
+    background-color: #e3e2e0;
+}
+
 #logo {
     width: 10vw;
-  }
-  
-  .top_header {
+}
+
+.top_header {
     display: flex;
     justify-content: space-around;
     height: 13vh;
-    background-color: orange;
-  }
-  
-  .top_header > #site_search {
+    background-color: #f19066;
+}
+
+.top_header>#site_search {
     height: 2vh;
-  }
-  
-  .top_header > .button {
+}
+
+.top_header>.button {
     height: 7vh;
     width: 5vw;
     margin: auto 0;
-  }
-  
-  #site_search {
+}
+
+#site_search {
     margin: auto 0;
     width: 30vw;
-  }
-  
-  .menu {
+}
+
+.menu {
     height: 4vh;
-    background-color: yellow;
-  }
-  .menu > nav {
+    background-color: #f3a683;
+}
+
+.menu>nav {
     height: 4vh;
-  }
-  
-  .menu > nav > ul {
+}
+
+.menu>nav>ul {
     list-style-type: none;
     text-align: center;
     padding: 1vh;
-  }
-  
-  .menu > nav > ul > li {
+}
+
+.menu>nav>ul>li {
     display: inline;
     margin: 5vw;
-  }
-  
-  /* FOOTER*/
-  
-  footer {
+}
+
+
+/* FOOTER*/
+
+footer {
     height: auto;
     background-color: orange;
-    margin-top: 6vh;
-  }
-  
-  /*footer > nav > ul {
+}
+
+
+/*footer > nav > ul {
     list-style-type: none;
     display: inline;
     text-align: right;
   }
   /*footer > nav > ul > li*/
-  /*#menu_footer {
+
+
+/*#menu_footer {
     display: inline;
     margin: 2vw;
   }*/
-  
-  #facebook {
+
+#facebook {
     width: 2%;
     height: 2%;
-  }
+}
+
 
 /* GROS BLOCS //////*/
 
@@ -84,28 +99,29 @@
 
 #bandeauGauche {
     flex: 3;
-    margin: 0 5vw 0 15vw;
-    border-radius: 25px;
     height: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: white;
 }
 
 #bandeauDroite {
     flex: 1;
-    margin: 0 5vw 0 0;
+    position: absolute;
+    top: 20vh;
+    left: 80vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 70vw;
+    width: 18vw;
 }
 
 
 /* BANDEAU DE DROITE */
 
 #recetteDuMois {
-    background-color: #f5cd79;
+    background-color: #f3a683;
     flex: 3;
     margin: 1vw 0;
     border-radius: 10px;
@@ -124,25 +140,26 @@
 }
 
 @keyframes bounce {
-    0%, 20%, 60%, 100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
-  
     40% {
-      -webkit-transform: translateY(-20px);
-      transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
     }
-  
     80% {
-      -webkit-transform: translateY(-10px);
-      transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
     }
-  }
+}
 
 #abonnezVous:hover {
     animation: bounce 1s;
-    background-color: #e15f41;
+    background-color: #f3a683;
     color: white;
 }
 
@@ -153,10 +170,10 @@
     background-color: #f5cd79;
     flex: 3;
     margin: 1vw 0;
-    border-radius: 10px;   
+    border-radius: 10px;
 }
 
-#proposerRecette > p {
+#proposerRecette>p {
     font-size: 2vw;
     text-align: center;
 }
@@ -193,7 +210,7 @@
 
 button {
     border-radius: 5px;
-    background:#e77f67;
+    background: #e77f67;
     border: none;
     padding: 1vw 2vw;
 }

@@ -16,7 +16,6 @@
     height: 2vh;
 }
 
-
 .top_header>.button {
     height: 5vh;
 }
@@ -76,9 +75,6 @@ footer>nav>ul>li {
     flex: 3;
     margin: 1vw 0;
     border-radius: 25px;
-    font-size: 2em;
-    text-align: center;
-    padding-top: 1em;
 }
 
 #abonnezVous {
@@ -86,62 +82,14 @@ footer>nav>ul>li {
     flex: 1;
     margin: 1vw 0;
     border-radius: 25px;
-    font-size: 2em;
-    text-align: center;
-    padding-top: 1em;
 }
-
-/* Formulaire - poster une recette */
 
 #proposerRecette {
-    background-color: #f4f7f8;
-    flex: 3;
+    background-color: brown;
+    flex: 1;
     margin: 1vw 0;
-    border-radius: 25px;   
+    border-radius: 25px;
 }
-
-#proposerRecette > p {
-    font-size: 2vw;
-    text-align: center;
-}
-
-#recipeForm {
-    text-align: left;
-    margin-top: 1vh;
-    padding: 0 3em;
-}
-
-#userName {
-    border-radius: 5px;
-    background: #E3E3E3;
-    border: none;
-    padding: 0.5vw 1vw;
-    margin-bottom: 0.5vw;
-}
-
-#userRecipe {
-    border-radius: 5px;
-    background: #E3E3E3;
-    border: none;
-    padding: 0.5vw 1vw;
-    margin-bottom: 0.5vw;
-}
-
-#detailRecipe {
-    border-radius: 5px;
-    background: #E3E3E3;
-    border: none;
-    padding: 0.5vw 1vw;
-    margin-bottom: 0.5vw;
-}
-
-button {
-    border-radius: 5px;
-    background:#1abc9c;
-    border: none;
-    padding: 1vw 2vw;
-}
-
 
 
 /* BANDEAU DE GAUCHE */
@@ -180,107 +128,64 @@ button {
 }
 
 #recette1G {
-    background-color: rgb(143, 143, 163);
     flex: 1;
-    margin: 0 10px 0 10px;
+    margin: 1vw 1vw 0 1vw;
     border-radius: 25px;
+    background-image: url(/photos/gratin.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 320px 460px;
 }
 
 #recette2G {
     background-color: rgb(143, 143, 163);
     flex: 1;
-    margin: 0 10px 0 10px;
+    margin: 1vw 1vw 0 1vw;
     border-radius: 25px;
 }
 
 #recette3G {
     background-color: rgb(143, 143, 163);
     flex: 1;
-    margin: 0 10px 0 10px;
+    margin: 1vw 1vw 0 1vw;
     border-radius: 25px;
 }
+
 
 /* Cards */
 
 .middle {
     position: absolute;
     top: 40%;
-    left: 40%;
-    transform: translate(-40%,-40%);
-    text-align: center;    
-}
-
-.middle2 {
-    position: absolute;
-    top: 145%;
-    left: 40%;
-    transform: translate(-40%,-145%);
-    text-align: center;    
-}
-
-.middle3 {
-    position: absolute;
-    top: 250%;
-    left: 40%;
-    transform: translate(-40%,-250%);
-    text-align: center;    
+    left: 42%;
+    transform: translate(-42%, -40%);
+    text-align: center;
 }
 
 .left {
     position: absolute;
     top: 40%;
-    left: 13%;
-    transform: translate(-13%, -40%);
-    text-align: center;    
-}
-
-.left2 {
-    position: absolute;
-    top: 145%;
-    left: 13%;
-    transform: translate(-13%, -145%);
-    text-align: center;    
-}
-
-.left3 {
-    position: absolute;
-    top: 250%;
-    left: 13%;
-    transform: translate(-13%, -250%);
-    text-align: center;    
+    left: 19%;
+    transform: translate(-19%, -40%);
+    text-align: center;
 }
 
 .rigth {
     position: absolute;
     top: 40%;
-    left: 67%;
-    transform: translate(-67%,-40%);
-    text-align: center;
-}
-
-.rigth2 {
-    position: absolute;
-    top: 145%;
-    left: 67%;
-    transform: translate(-67%,-145%);
-    text-align: center;
-}
-
-.rigth3 {
-    position: absolute;
-    top: 250%;
-    left: 67%;
-    transform: translate(-67%,-250%);
+    left: 65%;
+    transform: translate(-65%, -40%);
     text-align: center;
 }
 
 .card {
     cursor: pointer;
-    width: 300px;
-    height: 380px;
+    width: 18vw;
+    height: 50vh;
 }
 
-.front, .back {
+.front,
+.back {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -308,11 +213,11 @@ button {
     width: 100%;
 }
 
-.card:hover > .front {
+.card:hover>.front {
     transform: perspective(600px) rotateY(-180deg)
 }
 
-.card:hover > .back {
+.card:hover>.back {
     transform: perspective(600px) rotateY(0deg)
 }
 
@@ -334,21 +239,21 @@ button {
 #recette1M {
     background-color: rgb(143, 143, 163);
     flex: 1;
-    margin: 0 10px 0 10px;
+    margin: 1vw 1vw 0 1vw;
     border-radius: 25px;
 }
 
 #recette2M {
     background-color: rgb(143, 143, 163);
     flex: 1;
-    margin: 0 10px 0 10px;
+    margin: 1vw 1vw 0 1vw;
     border-radius: 25px;
 }
 
 #recette3M {
     background-color: rgb(143, 143, 163);
     flex: 1;
-    margin: 0 10px 0 10px;
+    margin: 1vw 1vw 0 1vw;
     border-radius: 25px;
 }
 
@@ -368,23 +273,22 @@ button {
 }
 
 #recette1W {
-    background-color: rgb(143, 143, 163);
     flex: 1;
-    margin: 0 10px 0 10px;
+    margin: 1vw 1vw 0 1vw;
     border-radius: 25px;
 }
 
 #recette2W {
     background-color: rgb(143, 143, 163);
     flex: 1;
-    margin: 0 10px 0 10px;
+    margin: 1vw 1vw 0 1vw;
     border-radius: 25px;
 }
 
 #recette3W {
     background-color: rgb(143, 143, 163);
     flex: 1;
-    margin: 0 10px 0 10px;
+    margin: 1vw 1vw 0 1vw;
     border-radius: 25px;
 }
 

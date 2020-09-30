@@ -6,40 +6,74 @@
     border: 1px solid red;
 }
 
-.top_header {
+#logo {
+    width: 10vw;
+  }
+  
+  .top_header {
     display: flex;
     justify-content: space-around;
-    height: 10vh;
-}
-
-.top_header>#site-search {
+    height: 13vh;
+    background-color: orange;
+  }
+  
+  .top_header > #site_search {
     height: 2vh;
-}
-
-.top_header>.button {
-    height: 5vh;
-}
-
-#site-search {
+  }
+  
+  .top_header > .button {
+    height: 7vh;
+    width: 5vw;
     margin: auto 0;
-}
-
-.button {
+  }
+  
+  #site_search {
     margin: auto 0;
-}
-
-.menu>nav>ul>li {
+    width: 30vw;
+  }
+  
+  .menu {
+    height: 4vh;
+    background-color: yellow;
+  }
+  .menu > nav {
+    height: 4vh;
+  }
+  
+  .menu > nav > ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 1vh;
+  }
+  
+  .menu > nav > ul > li {
+    display: inline;
+    margin: 5vw;
+  }
+  
+  /* FOOTER*/
+  
+  footer {
+    height: auto;
+    background-color: orange;
+    margin-top: 6vh;
+  }
+  
+  /*footer > nav > ul {
     list-style-type: none;
     display: inline;
-    padding: 2vw;
-}
-
-footer>nav>ul>li {
-    list-style-type: none;
+    text-align: right;
+  }
+  /*footer > nav > ul > li*/
+  /*#menu_footer {
     display: inline;
-    padding: 1vw;
-}
-
+    margin: 2vw;
+  }*/
+  
+  #facebook {
+    width: 2%;
+    height: 2%;
+  }
 
 /* GROS BLOCS //////*/
 

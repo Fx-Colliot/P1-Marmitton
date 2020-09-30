@@ -178,6 +178,54 @@ footer>nav>ul>li {
     text-align: center;
 }
 
+.middle2 {
+    position: absolute;
+    top: 175%;
+    left: 42%;
+    transform: translate(-42%, -175%);
+    text-align: center;
+}
+
+.left2 {
+    position: absolute;
+    top: 175%;
+    left: 19%;
+    transform: translate(-19%, -175%);
+    text-align: center;
+}
+
+.rigth2 {
+    position: absolute;
+    top: 175%;
+    left: 65%;
+    transform: translate(-65%, -175%);
+    text-align: center;
+}
+
+.middle3 {
+    position: absolute;
+    top: 310%;
+    left: 42%;
+    transform: translate(-42%, -310%);
+    text-align: center;
+}
+
+.left3 {
+    position: absolute;
+    top: 310%;
+    left: 19%;
+    transform: translate(-19%, -310%);
+    text-align: center;
+}
+
+.rigth3 {
+    position: absolute;
+    top: 310%;
+    left: 65%;
+    transform: translate(-65%, -310%);
+    text-align: center;
+}
+
 .card {
     cursor: pointer;
     width: 18vw;

@@ -1,7 +1,7 @@
 * {
     margin: 0;
     font-family: 'Slabo 27px', serif;
-    color: #333333;
+    color: #3d3d3d;
     box-sizing: border-box;
 }
 
@@ -45,7 +45,6 @@ header .logo {
     color: #fff;
     text-decoration: none;
     font-size: 3em;
-    text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s ease;
 }
@@ -563,8 +562,4 @@ h3 {
     flex: 1;
     margin: 1vw 1vw 0 1vw;
     border-radius: 25px;
-}
-
-.title {
-    text-align: center;
 }

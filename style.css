@@ -251,102 +251,78 @@ button {
     height: 30vw;
 }
 
-#recette1G {
-    flex: 1;
-    margin: 1vw 1vw 0 1vw;
-    border-radius: 25px;
-    background-image: url(/photos/gratin.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 320px 460px;
-}
-
-#recette2G {
-    background-color: rgb(143, 143, 163);
-    flex: 1;
-    margin: 1vw 1vw 0 1vw;
-    border-radius: 25px;
-}
-
-#recette3G {
-    background-color: rgb(143, 143, 163);
-    flex: 1;
-    margin: 1vw 1vw 0 1vw;
-    border-radius: 25px;
-}
-
 
 /* Cards */
 
 .middle {
     position: absolute;
-    top: 40%;
-    left: 42%;
-    transform: translate(-42%, -40%);
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -70%);
     text-align: center;
 }
 
 .left {
     position: absolute;
-    top: 40%;
-    left: 19%;
-    transform: translate(-19%, -40%);
+    top: 65%;
+    left: -40%;
+    transform: translate(40%, -70%);
     text-align: center;
 }
 
 .rigth {
     position: absolute;
-    top: 40%;
-    left: 65%;
-    transform: translate(-65%, -40%);
+    top: 65%;
+    left: -10%;
+    transform: translate(10%, -70%);
     text-align: center;
 }
 
 .middle2 {
     position: absolute;
-    top: 175%;
-    left: 42%;
-    transform: translate(-42%, -175%);
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -70%);
     text-align: center;
 }
 
 .left2 {
     position: absolute;
-    top: 175%;
-    left: 19%;
-    transform: translate(-19%, -175%);
+    top: 65%;
+    left: -40%;
+    transform: translate(40%, -70%);
     text-align: center;
 }
 
 .rigth2 {
     position: absolute;
-    top: 175%;
-    left: 65%;
-    transform: translate(-65%, -175%);
+    top: 65%;
+    left: -10%;
+    transform: translate(10%, -70%);
     text-align: center;
 }
 
 .middle3 {
     position: absolute;
-    top: 310%;
-    left: 42%;
-    transform: translate(-42%, -310%);
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -70%);
     text-align: center;
 }
 
 .left3 {
     position: absolute;
-    top: 310%;
-    left: 19%;
-    transform: translate(-19%, -310%);
+    top: 65%;
+    left: -40%;
+    transform: translate(40%, -70%);
     text-align: center;
 }
 
 .rigth3 {
     position: absolute;
-    top: 310%;
-    left: 65%;
-    transform: translate(-65%, -310%);
+    top: 65%;
+    left: -10%;
+    transform: translate(10%, -70%);
     text-align: center;
 }
 
@@ -354,6 +330,7 @@ button {
     cursor: pointer;
     width: 18vw;
     height: 50vh;
+    position: relative;
 }
 
 .front,
@@ -378,6 +355,7 @@ button {
 .back {
     background: white;
     transform: perspective(600px) rotateY(180deg);
+    border: solid rgb(82, 81, 81) 1px;
 }
 
 .back-content {

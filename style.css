@@ -1,66 +1,160 @@
 * {
-  margin: 0;
-  font-family: "Slabo 27px", serif;
+    margin: 0;
+    font-family: 'Slabo 27px', serif;
+    color: #3d3d3d;
+    box-sizing: border-box;
 }
 
-.wip {
-  border: 1px solid red;
-}
-
-#main {
-  background-color: white;
-  margin: 0 20vw 0 10vw;
+main {
+    background-color: white;
+    margin: 0 20vw 0 10vw;
 }
 
 body {
-  background-color: #e3e2e0;
+    background-color: lightgray;
 }
 
-#logo {
-  width: 8%;
+
+/* Header */
+
+ul {
+    list-style-type: none;
 }
 
-.top_header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 13vh;
-  background-color: #f19066;
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    transition: 0.6s ease;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-.top_header > #site_search {
-  height: 2vh;
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
 }
 
-.top_header > #login {
-  height: 4%;
-  width: 4%;
-  margin: auto 0;
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 3em;
+    letter-spacing: 2px;
+    transition: 0.6s ease;
 }
 
-#loupe {
-  height: 1%;
-  width: 1%;
+header .sticky .logo {
+    color: lightgray;
 }
 
-.menu {
-  height: 4vh;
-  background-color: #f3a683;
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu > nav {
-  height: 4vh;
+header ul li {
+    position: relative;
 }
 
-.menu > nav > ul {
-  list-style-type: none;
-  text-align: center;
-  padding: 1vh;
+header a:hover {
+    color: #f5cd79;
+    text-decoration: underline;
+    transition: 0.6s ease;
 }
 
-.menu > nav > ul > li {
-  display: inline;
-  margin: 5vw;
+header ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #eeaf79;
+    letter-spacing: 2px;
+    transition: 0.6s ease;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+header.sticky ul li a {
+    color: #f5cd79;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://files.izi-by-edf.fr/uploads/images/offers/renovation-de-plan-de-travail-en-bois-massif-133.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2 span {
+    color: #f5cd79;
+}
+
+.banner h2 {
+    color: white;
+    font-size: 65px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+/* search */
+
+.search-box {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    background: #f5cd79;
+    border-radius: 40px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn {
+    background: white;
+}
+
+.search-btn {
+    color: #f5cd79;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s ease;
+    width: 0px;
+    line-height: 40px;
 }
 
 /* GROS BLOCS //////*/
@@ -71,82 +165,121 @@ body {
 }
 
 #bandeauGauche {
-  flex: 3;
-  height: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: white;
+    flex: 3;
+    border-radius: 25px;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
 }
 
 #bandeauDroite {
-  flex: 1;
-  position: absolute;
-  top: 20vh;
-  left: 80vw;
-  display: flex;
-  flex-direction: column;
-  height: 70vw;
-  width: 18vw;
+    flex: 1;
+    position: absolute;
+    top: 105vh;
+    left: 80vw;
+    display: flex;
+    flex-direction: column;
+    height: 70vw;
+    width: 18vw;
 }
 
 /* BANDEAU DE DROITE */
 
+
+/* Vignette Recette du mois */
+
 #recetteDuMois {
-  background-color: #f3a683;
-  flex: 3;
-  margin: 1vw 0;
-  border-radius: 10px;
-  font-size: 2em;
-  text-align: center;
-  padding-top: 1em;
+    background-color: #f5cd79;
+    flex: 3;
+    margin: 1vw 0;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
+#recetteDuMois>h2 {
+    margin-top: 1em;
+    font-size: 2em;
+    border-bottom: 0.5vh solid #b1837b;
+    ;
+}
+
+#recetteDuMois>p {
+    font-size: 1.5em;
+    padding-top: 2em;
+    color: #546de5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+#imgDuMois {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Vignette Newsletter */
+
 #abonnezVous {
-  background-color: #f5cd79;
-  flex: 0.5;
-  margin: 1vw 0;
-  border-radius: 10px;
-  font-size: 2em;
-  text-align: center;
+    background-color: #f5cd79;
+    flex: 0.5;
+    border-radius: 10px;
+    font-size: 2em;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 @keyframes bounce {
-  0%,
-  20%,
-  60%,
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  40% {
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  80% {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    80% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5 px);
+    }
 }
 
 #abonnezVous:hover {
-  animation: bounce 1s;
-  background-color: #f3a683;
-  color: white;
+    animation: bounce 1s;
+    background-color: #f3a683;
+    color: white;
+    cursor: pointer;
+}
+
+#abonnezVous>p {
+    text-align: center;
+    margin-top: 1vh;
 }
 
 /* Formulaire - poster une recette */
 
 #proposerRecette {
-  background-color: #f5cd79;
-  flex: 3;
-  margin: 1vw 0;
-  border-radius: 10px;
+    background-color: #f5cd79;
+    flex: 3;
+    margin: 1vw 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
-#proposerRecette > p {
-  font-size: 2vw;
-  text-align: center;
+#proposerRecette>p {
+    font-size: 2vw;
+    text-align: center;
+    margin-top: 1vh;
 }
 
 #recipeForm {
@@ -186,7 +319,18 @@ button {
   padding: 1vw 2vw;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
+
 /* BANDEAU DE GAUCHE */
+
+h1 {
+    text-align: center;
+    border-top: 1vh double #b1837b;
+    border-bottom: 1vh double #b1837b;
+}
 
 #recettesGrossir {
   flex: 1;
@@ -220,108 +364,86 @@ button {
   height: 30vw;
 }
 
-#recette1G {
-  flex: 1;
-  margin: 1vw 1vw 0 1vw;
-  border-radius: 25px;
-  background-image: url(/photos/gratin.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 320px 460px;
-}
-
-#recette2G {
-  background-color: rgb(143, 143, 163);
-  flex: 1;
-  margin: 1vw 1vw 0 1vw;
-  border-radius: 25px;
-}
-
-#recette3G {
-  background-color: rgb(143, 143, 163);
-  flex: 1;
-  margin: 1vw 1vw 0 1vw;
-  border-radius: 25px;
-}
 
 /* Cards */
 
 .middle {
-  position: absolute;
-  top: 40%;
-  left: 42%;
-  transform: translate(-42%, -40%);
-  text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
 }
 
 .left {
-  position: absolute;
-  top: 40%;
-  left: 19%;
-  transform: translate(-19%, -40%);
-  text-align: center;
+    position: absolute;
+    top: 65%;
+    left: -47%;
+    transform: translate(47%, -70%);
+    text-align: center;
 }
 
 .rigth {
-  position: absolute;
-  top: 40%;
-  left: 65%;
-  transform: translate(-65%, -40%);
-  text-align: center;
+    position: absolute;
+    top: 65%;
+    left: -3%;
+    transform: translate(3%, -70%);
+    text-align: center;
 }
 
 .middle2 {
-  position: absolute;
-  top: 175%;
-  left: 42%;
-  transform: translate(-42%, -175%);
-  text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
 }
 
 .left2 {
-  position: absolute;
-  top: 175%;
-  left: 19%;
-  transform: translate(-19%, -175%);
-  text-align: center;
+    position: absolute;
+    top: 65%;
+    left: -47%;
+    transform: translate(47%, -70%);
+    text-align: center;
 }
 
 .rigth2 {
-  position: absolute;
-  top: 175%;
-  left: 65%;
-  transform: translate(-65%, -175%);
-  text-align: center;
+    position: absolute;
+    top: 65%;
+    left: -3%;
+    transform: translate(3%, -70%);
+    text-align: center;
 }
 
 .middle3 {
-  position: absolute;
-  top: 310%;
-  left: 42%;
-  transform: translate(-42%, -310%);
-  text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    text-align: center;
 }
 
 .left3 {
-  position: absolute;
-  top: 310%;
-  left: 19%;
-  transform: translate(-19%, -310%);
-  text-align: center;
+    position: absolute;
+    top: 65%;
+    left: -47%;
+    transform: translate(47%, -70%);
+    text-align: center;
 }
 
 .rigth3 {
-  position: absolute;
-  top: 310%;
-  left: 65%;
-  transform: translate(-65%, -310%);
-  text-align: center;
+    position: absolute;
+    top: 65%;
+    left: -3%;
+    transform: translate(3%, -70%);
+    text-align: center;
 }
 
 .card {
-  cursor: pointer;
-  width: 18vw;
-  height: 50vh;
+    cursor: pointer;
+    width: 20vw;
+    height: 50vh;
+    position: relative;
 }
 
 .front,
@@ -344,13 +466,15 @@ button {
 }
 
 .back {
-  background: white;
-  transform: perspective(600px) rotateY(180deg);
+    background: white;
+    transform: perspective(600px) rotateY(180deg);
+    border: solid rgb(82, 81, 81) 1px;
 }
 
 .back-content {
-  color: #2c3e50;
-  width: 100%;
+    color: #2c3e50;
+    width: 100%;
+    height: 60%;
 }
 
 .card:hover > .front {
@@ -375,26 +499,6 @@ button {
   height: 30vw;
 }
 
-#recette1M {
-  background-color: rgb(143, 143, 163);
-  flex: 1;
-  margin: 1vw 1vw 0 1vw;
-  border-radius: 25px;
-}
-
-#recette2M {
-  background-color: rgb(143, 143, 163);
-  flex: 1;
-  margin: 1vw 1vw 0 1vw;
-  border-radius: 25px;
-}
-
-#recette3M {
-  background-color: rgb(143, 143, 163);
-  flex: 1;
-  margin: 1vw 1vw 0 1vw;
-  border-radius: 25px;
-}
 
 /* RECETTES DE LA WILD */
 
@@ -423,12 +527,6 @@ button {
   border-radius: 25px;
 }
 
-#recette3W {
-  background-color: rgb(143, 143, 163);
-  flex: 1;
-  margin: 1vw 1vw 0 1vw;
-  border-radius: 25px;
-}
 
 .title {
   text-align: center;

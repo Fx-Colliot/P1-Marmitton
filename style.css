@@ -14,17 +14,14 @@ body {
     background-color: lightgray;
 }
 
+
 /* Header */
 
 ul {
     list-style-type: none;
 }
 
-body {
-    min-height: 1000px;
-}
-
-header{
+header {
     position: fixed;
     width: 100%;
     display: flex;
@@ -74,19 +71,17 @@ header a:hover {
     transition: 0.6s ease;
 }
 
-
 header ul li a {
     position: relative;
     text-decoration: none;
     color: #eeaf79;
     letter-spacing: 2px;
     transition: 0.6s ease;
-    margin:  0 20px;
+    margin: 0 20px;
     font-size: 20px;
     font-weight: bold;
     text-shadow: 1px 1px 2px black;
 }
-
 
 header.sticky ul li a {
     color: #f5cd79;
@@ -113,6 +108,7 @@ header.sticky ul li a {
     text-align: center;
     text-shadow: 1px 1px 2px black;
 }
+
 
 /* search */
 
@@ -221,7 +217,9 @@ footer {
 
 /* BANDEAU DE DROITE */
 
+
 /* Vignette Recette du mois */
+
 #recetteDuMois {
     background-color: #f5cd79;
     flex: 3;
@@ -230,17 +228,17 @@ footer {
     text-align: center;
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
-         box-shadow: 0 10px 6px -6px #777;
-    
+    box-shadow: 0 10px 6px -6px #777;
 }
 
-#recetteDuMois > h2 {
+#recetteDuMois>h2 {
     margin-top: 1em;
     font-size: 2em;
-    border-bottom: 0.5vh solid #546de5; ;
+    border-bottom: 0.5vh solid #546de5;
+    ;
 }
 
-#recetteDuMois > p  {
+#recetteDuMois>p {
     font-size: 1.5em;
     padding-top: 2em;
     color: #546de5;
@@ -253,6 +251,7 @@ footer {
     border-radius: 10px;
 }
 
+
 /* Vignette Newsletter */
 
 #abonnezVous {
@@ -262,7 +261,7 @@ footer {
     font-size: 2em;
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
-         box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 @keyframes bounce {
@@ -279,8 +278,7 @@ footer {
     }
     80% {
         -webkit-transform: translateY(-5px);
-        transform: translateY(-5
-        px);
+        transform: translateY(-5 px);
     }
 }
 
@@ -291,7 +289,7 @@ footer {
     cursor: pointer;
 }
 
-#abonnezVous > p {
+#abonnezVous>p {
     text-align: center;
     margin-top: 1vh;
 }
@@ -306,7 +304,7 @@ footer {
     border-radius: 10px;
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
-         box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 #proposerRecette>p {
@@ -359,6 +357,10 @@ button:hover {
 
 /* BANDEAU DE GAUCHE */
 
+h3 {
+    font-size: 4ch;
+}
+
 #recettesGrossir {
     flex: 1;
     margin: 10px 0 10px 0;
@@ -406,16 +408,16 @@ button:hover {
 .left {
     position: absolute;
     top: 65%;
-    left: -40%;
-    transform: translate(40%, -70%);
+    left: -47%;
+    transform: translate(47%, -70%);
     text-align: center;
 }
 
 .rigth {
     position: absolute;
     top: 65%;
-    left: -10%;
-    transform: translate(10%, -70%);
+    left: -3%;
+    transform: translate(3%, -70%);
     text-align: center;
 }
 
@@ -430,16 +432,16 @@ button:hover {
 .left2 {
     position: absolute;
     top: 65%;
-    left: -40%;
-    transform: translate(40%, -70%);
+    left: -47%;
+    transform: translate(47%, -70%);
     text-align: center;
 }
 
 .rigth2 {
     position: absolute;
     top: 65%;
-    left: -10%;
-    transform: translate(10%, -70%);
+    left: -3%;
+    transform: translate(3%, -70%);
     text-align: center;
 }
 
@@ -454,22 +456,22 @@ button:hover {
 .left3 {
     position: absolute;
     top: 65%;
-    left: -40%;
-    transform: translate(40%, -70%);
+    left: -47%;
+    transform: translate(47%, -70%);
     text-align: center;
 }
 
 .rigth3 {
     position: absolute;
     top: 65%;
-    left: -10%;
-    transform: translate(10%, -70%);
+    left: -3%;
+    transform: translate(3%, -70%);
     text-align: center;
 }
 
 .card {
     cursor: pointer;
-    width: 18vw;
+    width: 20vw;
     height: 50vh;
     position: relative;
 }
@@ -502,6 +504,7 @@ button:hover {
 .back-content {
     color: #2c3e50;
     width: 100%;
+    height: 60%;
 }
 
 .card:hover>.front {
@@ -526,7 +529,6 @@ button:hover {
     justify-content: space-between;
     height: 30vw;
 }
-
 
 
 /* RECETTES DE LA WILD */

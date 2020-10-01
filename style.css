@@ -2,65 +2,164 @@
     margin: 0;
     font-family: 'Slabo 27px', serif;
     color: #333333;
+    box-sizing: border-box;
 }
 
-.wip {
-    border: 1px solid red;
-}
-
-#main {
+main {
     background-color: white;
     margin: 0 20vw 0 10vw;
 }
 
 body {
-    background-color: #e3e2e0;
+    background-color: lightgray;
 }
 
-#logo {
-    width: 10vw;
-}
+/* Header */
 
-.top_header {
-    display: flex;
-    justify-content: space-around;
-    height: 13vh;
-    background-color: #f19066;
-}
-
-.top_header>#site_search {
-    height: 2vh;
-}
-
-.top_header>.button {
-    height: 7vh;
-    width: 5vw;
-    margin: auto 0;
-}
-
-#site_search {
-    margin: auto 0;
-    width: 30vw;
-}
-
-.menu {
-    height: 4vh;
-    background-color: #f3a683;
-}
-
-.menu>nav {
-    height: 4vh;
-}
-
-.menu>nav>ul {
+ul {
     list-style-type: none;
-    text-align: center;
-    padding: 1vh;
 }
 
-.menu>nav>ul>li {
-    display: inline;
-    margin: 5vw;
+body {
+    min-height: 1000px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    transition: 0.6s ease;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s ease;
+}
+
+header .sticky .logo {
+    color: lightgray;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+}
+
+header a:hover {
+    color: #f5cd79;
+    text-decoration: underline;
+    transition: 0.6s ease;
+}
+
+
+header ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #eeaf79;
+    letter-spacing: 2px;
+    transition: 0.6s ease;
+    margin:  0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+header.sticky ul li a {
+    color: #f5cd79;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://files.izi-by-edf.fr/uploads/images/offers/renovation-de-plan-de-travail-en-bois-massif-133.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2 span {
+    color: #f5cd79;
+}
+
+.banner h2 {
+    color: white;
+    font-size: 65px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* search */
+
+.search-box {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    background: #f5cd79;
+    border-radius: 40px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover>.search-btn {
+    background: white;
+}
+
+.search-btn {
+    color: #f5cd79;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s ease;
+    width: 0px;
+    line-height: 40px;
 }
 
 
@@ -100,6 +199,7 @@ footer {
 
 #bandeauGauche {
     flex: 3;
+    border-radius: 25px;
     height: 100vw;
     display: flex;
     flex-direction: column;
@@ -110,7 +210,7 @@ footer {
 #bandeauDroite {
     flex: 1;
     position: absolute;
-    top: 20vh;
+    top: 105vh;
     left: 80vw;
     display: flex;
     flex-direction: column;
@@ -427,26 +527,6 @@ button:hover {
     height: 30vw;
 }
 
-#recette1M {
-    background-color: rgb(143, 143, 163);
-    flex: 1;
-    margin: 1vw 1vw 0 1vw;
-    border-radius: 25px;
-}
-
-#recette2M {
-    background-color: rgb(143, 143, 163);
-    flex: 1;
-    margin: 1vw 1vw 0 1vw;
-    border-radius: 25px;
-}
-
-#recette3M {
-    background-color: rgb(143, 143, 163);
-    flex: 1;
-    margin: 1vw 1vw 0 1vw;
-    border-radius: 25px;
-}
 
 
 /* RECETTES DE LA WILD */

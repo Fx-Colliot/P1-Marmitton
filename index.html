@@ -3,40 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1f5fc5b46f.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" typetext="css" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div class="top_header">
-          <img src="photo/20200929_123822.jpg" id = "logo" alt="logo">
-          <label for="site-search"></label>
-          <input type="search" id="site_search" name="site_search" />
-          <!--<button><img src="photo/loupe.svg" alt="loupe" id="loupe"></button>-->
-  
-          <input type="image" class="button" alt="login" src="photo/login-rounded-right.png" alt = "logo"></input>
-        </div>
-  
-        <div class="menu">
-          <nav>
-            <ul>
-              <li>
-                <a href="#RecettesGrossir">Envie de prendre du poids ?</a>
-              </li>
-              <li>
-                <a href="#recettesMaigrir">Envie de perdre du poids ?</a>
-              </li>
-              <li><a href="#recettesWild">Recette des wilders</a></li>
-              <li><a href="#abonnezVous">Rejoignez nous</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-
-
-    <main>
+    <header id="header">
+        <a href="" class="logo">Logo</a>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="home">Recette maigrir</a></li>
+            <li><a href="home">Recette grossir</a></li>
+            <li><a href="home">Recette wilders</a></li>
+            <li><a href="home">Recette</a></li>
+            <li><a href="about">About us</a></li>
+            <li><a href="home">Login</a></li>
+        </ul>
+    </header>
+    <div class="search-box">
+        <input class="search-txt" type="text" name="" placeholder="Type to search">
+        <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+    <section class="banner" id="home">
+        <h2>Retrouver les meilleurs <span>recettes <br></span>pour votre famille</h2>
+    </section>
+    <main id="main">
         <div id="flexbox">
             <div id="bandeauGauche">
                 <div id="recettesGrossir">
@@ -185,8 +181,13 @@
                 </div>
             </div>
             <div id="bandeauDroite">
-                <div id="recetteDuMois">Recette du mois</div>
-                <div id="abonnezVous">Abonnez vous à la newsletter</div>
+                <div id="recetteDuMois">
+                    <img src="photos/pokebowl.jpg" alt="Photo recette du mois" id="imgDuMois">
+                    <h2>Recette de mois</h2>
+                    <p>Evadez-vous à Hawai avec notre pokebowl !</p>
+                </div>
+
+                <div id="abonnezVous"><p>Abonnez vous à la newsletter</p></div>
                 <div id="proposerRecette">
                     <p>Propose ta recette</p>
                     <form id="recipeForm">
@@ -208,25 +209,24 @@
     </main>
     <footer>
         <nav>
-          <ul>
-            <div id = "menu_footer">
-              <li><a href="page2">Qui sommes nous?</a></li>
-              <li><a href="page3">Contact us</a></li>
-              <li><a href="page4">Mentions légales</a></li>
-              <li><a href="news_later">Newsletter</a></li>
-            </div>
-            <div id="footer_reseau">
-              <li><a href="https://fr-fr.facebook.com/"></a><img src="photo/facebook.svg" alt="logo_FB" id="facebook"></li>
-              <li><a href="https://twitter.com/?lang=fr">TW</a></li>
-              <li><a href="https://www.instagram.com/?hl=fr">Inst</a></li>
-          </div>
-          </ul>
+            <ul>
+                <div id="menu_footer">
+                    <li><a href="page2">Qui sommes nous?</a></li>
+                    <li><a href="page3">Contact us</a></li>
+                    <li><a href="page4">Mentions légales</a></li>
+                    <li><a href="news_later">Newsletter</a></li>
+                </div>
+                <div id="footer_reseau">
+                    <li>
+                        <a href="https://fr-fr.facebook.com/"></a><img src="photo/facebook.svg" alt="logo_FB" id="facebook"></li>
+                    <li><a href="https://twitter.com/?lang=fr">TW</a></li>
+                    <li><a href="https://www.instagram.com/?hl=fr">Inst</a></li>
+                </div>
+            </ul>
         </nav>
-      </footer>
-   
+    </footer>
 
-
-
+    <script type="text/javascript" src="header.js"></script>
 
 </body>
 

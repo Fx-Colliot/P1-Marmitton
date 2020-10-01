@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: 'Slabo 27px', serif;
+    color: #333333;
 }
 
 .wip {
@@ -120,23 +121,48 @@ footer {
 
 /* BANDEAU DE DROITE */
 
+/* Vignette Recette du mois */
 #recetteDuMois {
-    background-color: #f3a683;
+    background-color: #f5cd79;
     flex: 3;
     margin: 1vw 0;
     border-radius: 10px;
-    font-size: 2em;
     text-align: center;
-    padding-top: 1em;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+    
 }
+
+#recetteDuMois > h2 {
+    margin-top: 1em;
+    font-size: 2em;
+    border-bottom: 0.5vh solid #546de5; ;
+}
+
+#recetteDuMois > p  {
+    font-size: 1.5em;
+    padding-top: 2em;
+    color: #546de5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+#imgDuMois {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Vignette Newsletter */
 
 #abonnezVous {
     background-color: #f5cd79;
     flex: 0.5;
-    margin: 1vw 0;
     border-radius: 10px;
     font-size: 2em;
-    text-align: center;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
 }
 
 @keyframes bounce {
@@ -148,12 +174,13 @@ footer {
         transform: translateY(0);
     }
     40% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-    80% {
         -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
+    }
+    80% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5
+        px);
     }
 }
 
@@ -161,6 +188,12 @@ footer {
     animation: bounce 1s;
     background-color: #f3a683;
     color: white;
+    cursor: pointer;
+}
+
+#abonnezVous > p {
+    text-align: center;
+    margin-top: 1vh;
 }
 
 
@@ -171,11 +204,15 @@ footer {
     flex: 3;
     margin: 1vw 0;
     border-radius: 10px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
 }
 
 #proposerRecette>p {
     font-size: 2vw;
     text-align: center;
+    margin-top: 1vh;
 }
 
 #recipeForm {
@@ -213,6 +250,10 @@ button {
     background: #e77f67;
     border: none;
     padding: 1vw 2vw;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 

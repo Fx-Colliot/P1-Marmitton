@@ -233,7 +233,7 @@ footer {
 #recetteDuMois>h2 {
     margin-top: 1em;
     font-size: 2em;
-    border-bottom: 0.5vh solid #546de5;
+    border-bottom: 0.5vh solid #b1837b;
     ;
 }
 
@@ -356,8 +356,10 @@ button:hover {
 
 /* BANDEAU DE GAUCHE */
 
-h3 {
-    font-size: 4ch;
+h1 {
+    text-align: center;
+    border-top: 1vh double #b1837b;
+    border-bottom: 1vh double #b1837b;
 }
 
 #recettesGrossir {

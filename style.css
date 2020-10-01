@@ -120,15 +120,38 @@ footer {
 
 /* BANDEAU DE DROITE */
 
+/* Vignette Recette du mois */
 #recetteDuMois {
-    background-color: #f3a683;
+    background-color: #f5cd79;
     flex: 3;
     margin: 1vw 0;
     border-radius: 10px;
-    font-size: 2em;
     text-align: center;
-    padding-top: 1em;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+    
 }
+
+#recetteDuMois > h2 {
+    font-size: 2em;
+    border-bottom: 0.5vh solid #546de5; ;
+}
+
+#recetteDuMois > p  {
+    font-size: 1.5em;
+    padding-top: 2em;
+    color: #546de5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+#imgDuMois {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Vignette Newsletter */
 
 #abonnezVous {
     background-color: #f5cd79;
@@ -137,6 +160,9 @@ footer {
     border-radius: 10px;
     font-size: 2em;
     text-align: center;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
 }
 
 @keyframes bounce {
@@ -171,6 +197,9 @@ footer {
     flex: 3;
     margin: 1vw 0;
     border-radius: 10px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
 }
 
 #proposerRecette>p {

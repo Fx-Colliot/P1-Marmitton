@@ -1,13 +1,13 @@
 * {
     margin: 0;
     font-family: 'Slabo 27px', serif;
-    color: #3d3d3d;
+    color: #333333;
     box-sizing: border-box;
 }
 
 main {
     background-color: white;
-    margin: 0 20vw 0 10vw;
+    margin: 0 10vw 0 10vw;
 }
 
 body {
@@ -44,7 +44,8 @@ header .logo {
     font-weight: 700;
     color: #fff;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 3em;
+    text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s ease;
 }
@@ -95,7 +96,6 @@ header.sticky ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 
 .banner h2 span {
@@ -159,287 +159,138 @@ header.sticky ul li a {
 }
 
 
-/* GROS BLOCS //////*/
+/* FOOTER*/
 
-#flexbox {
-    display: flex;
-    justify-content: center;
+footer {
+    height: auto;
+    background-color: orange;
 }
 
+
+/*footer > nav > ul {
+    list-style-type: none;
+    display: inline;
+    text-align: right;
+  }
+  /*footer > nav > ul > li*/
+
+
+/*#menu_footer {
+    display: inline;
+    margin: 2vw;
+  }*/
+
+#facebook {
+    width: 2%;
+    height: 2%;
+}
+
+
+/* GROS BLOCS //////*/
+
 #bandeauGauche {
-    flex: 3;
     border-radius: 25px;
-    height: 100vw;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
 }
 
-#bandeauDroite {
-    flex: 1;
-    position: absolute;
-    top: 105vh;
-    left: 80vw;
-    display: flex;
-    flex-direction: column;
-    height: 70vw;
-    width: 18vw;
-}
-
-
-/* BANDEAU DE DROITE */
-
-
-/* Vignette Recette du mois */
-
-#recetteDuMois {
-    background-color: #f5cd79;
-    flex: 3;
-    margin: 1vw 0;
-    border-radius: 10px;
-    text-align: center;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 6px -6px #777;
-}
-
-#recetteDuMois>h2 {
-    margin-top: 1em;
-    font-size: 2em;
-    border-bottom: 0.5vh solid #b1837b;
-}
-
-#recetteDuMois>p {
-    font-size: 1.5em;
-    padding-top: 2em;
-    color: #546de5;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-}
-
-#imgDuMois {
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-/* Vignette Newsletter */
-
-#abonnezVous {
-    background-color: #f5cd79;
-    flex: 0.5;
-    border-radius: 10px;
-    font-size: 2em;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 6px -6px #777;
-}
-
-@keyframes bounce {
-    0%,
-    20%,
-    60%,
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    40% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    80% {
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5 px);
-    }
-}
-
-#abonnezVous:hover {
-    animation: bounce 1s;
-    background-color: #f3a683;
-    color: white;
-    cursor: pointer;
-}
-
-#abonnezVous>p {
-    text-align: center;
+#recettesGrossir {
     margin-top: 1vh;
-}
-
-
-/* Formulaire - poster une recette */
-
-#proposerRecette {
-    background-color: #f5cd79;
-    flex: 3;
-    margin: 1vw 0;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 6px -6px #777;
-}
-
-#proposerRecette>p {
-    font-size: 2vw;
-    text-align: center;
-    margin-top: 1vh;
-}
-
-#recipeForm {
-    text-align: left;
-    margin-top: 1vh;
-    padding: 0 3em;
-}
-
-#userName {
-    border-radius: 5px;
-    background: white;
-    border: none;
-    padding: 0.5vw 1vw;
-    margin-bottom: 0.5vw;
-}
-
-#userRecipe {
-    border-radius: 5px;
-    background: white;
-    border: none;
-    padding: 0.5vw 1vw;
-    margin-bottom: 0.5vw;
-}
-
-#detailRecipe {
-    border-radius: 5px;
-    background: white;
-    border: none;
-    padding: 0.5vw 1vw;
-    margin-bottom: 0.5vw;
-}
-
-button {
-    border-radius: 5px;
-    background: #e77f67;
-    border: none;
-    padding: 1vw 2vw;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 
 /* BANDEAU DE GAUCHE */
 
-h1 {
-    text-align: center;
-    border-top: 1vh double #b1837b;
-    border-bottom: 1vh double #b1837b;
+h2 {
+    font-size: 2em;
+    border-bottom: 0.5vh solid #f3a571;
+    border-top: 0.5vh solid #f3a571;
 }
 
-#recettesGrossir {
-    flex: 1;
-    margin: 10px 0 10px 0;
-    border-radius: 25px;
-}
-
-#recettesMaigrir {
-    flex: 1;
-    margin: 10px 0 10px 0;
-    border-radius: 25px;
-}
-
-#recettesWild {
-    flex: 1;
-    margin: 10px 0 10px 0;
-    border-radius: 25px;
+h3 {
+    font-size: 4ch;
 }
 
 
 /* RECETTES POUR PRENDRE DU POIDS */
 
-#recettesGrossir {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 #listeRecettesGrossir {
     display: flex;
-    justify-content: space-between;
-    height: 30vw;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 55vh;
+    padding-top: 2vh;
+}
+
+
+/* RECETTES POUR PERDRE DU POIDS */
+
+#listeRecettesMaigrir {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 55vh;
+    padding-top: 2vh;
+}
+
+
+/* RECETTES DE LA WILD */
+
+#listeRecettesWild {
+    display: flex;
+    justify-content: space-around;
+    height: 55vh;
+    padding-top: 2vh;
 }
 
 
 /* Cards */
 
 .middle {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -70%);
+    position: relative;
     text-align: center;
 }
 
 .left {
-    position: absolute;
-    top: 65%;
-    left: -47%;
-    transform: translate(47%, -70%);
+    position: relative;
     text-align: center;
 }
 
 .rigth {
-    position: absolute;
-    top: 65%;
-    left: -3%;
-    transform: translate(3%, -70%);
+    position: relative;
     text-align: center;
 }
 
 .middle2 {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -70%);
+    position: relative;
     text-align: center;
 }
 
 .left2 {
-    position: absolute;
-    top: 65%;
-    left: -47%;
-    transform: translate(47%, -70%);
+    position: relative;
     text-align: center;
 }
 
 .rigth2 {
-    position: absolute;
-    top: 65%;
-    left: -3%;
-    transform: translate(3%, -70%);
+    position: relative;
     text-align: center;
 }
 
 .middle3 {
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -70%);
+    position: relative;
     text-align: center;
 }
 
 .left3 {
-    position: absolute;
-    top: 65%;
-    left: -47%;
-    transform: translate(47%, -70%);
+    position: relative;
     text-align: center;
 }
 
 .rigth3 {
-    position: absolute;
-    top: 65%;
-    left: -3%;
-    transform: translate(3%, -70%);
+    position: relative;
     text-align: center;
 }
 
@@ -479,57 +330,15 @@ h1 {
     color: #2c3e50;
     width: 100%;
     height: 60%;
+    margin-top: 40%;
 }
 
 .card:hover>.front {
-    transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg)
 }
 
 .card:hover>.back {
-    transform: perspective(600px) rotateY(0deg);
-}
-
-
-/* RECETTES POUR PERDRE DU POIDS */
-
-#recettesMaigrir {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#listeRecettesMaigrir {
-    display: flex;
-    justify-content: space-between;
-    height: 30vw;
-}
-
-
-/* RECETTES DE LA WILD */
-
-#recettesWild {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#listeRecettesWild {
-    display: flex;
-    justify-content: space-between;
-    height: 30vw;
-}
-
-#recette1W {
-    flex: 1;
-    margin: 1vw 1vw 0 1vw;
-    border-radius: 25px;
-}
-
-#recette2W {
-    background-color: rgb(143, 143, 163);
-    flex: 1;
-    margin: 1vw 1vw 0 1vw;
-    border-radius: 25px;
+    transform: perspective(600px) rotateY(0deg)
 }
 
 .title {
@@ -537,73 +346,98 @@ h1 {
 }
 
 
-/* FOOTER*/
+/* MEDIA QUERIES */
 
-footer {
-    background-color: orange;
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#menu_footer {
-    width: 50%;
-}
-
-#menu_footer>ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-decoration: none;
-}
-
-#footer_reseau {
-    width: 50%;
-    height: 100%;
-}
-
-#footer_reseau>ul {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-#footer_reseau>ul>li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-}
-
-#footer_reseau>ul>li>a {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-#menu_footer>ul>li>a {
-    height: 100%;
-    text-decoration: none;
-}
-
-#menu_footer>ul>li>a:hover {
-    color: green;
-}
-
-#facebook {
-    width: 15%;
-    height: 15%;
-}
-
-#twitter {
-    width: 20%;
-    height: 50%;
-}
-
-#instagram {
-    width: 20%;
-    height: 30%;
+@media screen and (max-width: 940px) {
+    #bandeauGauche {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+    }
+    #listeRecettesGrossir {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+    }
+    #listeRecettesMaigrir {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+    }
+    #listeRecettesWild {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+    }
+    .middle {
+        position: relative;
+        text-align: center;
+        margin: 1vh 0;
+    }
+    .left {
+        position: relative;
+        text-align: center;
+        margin: 1vh 0;
+    }
+    .rigth {
+        position: relative;
+        text-align: center;
+        margin: 1vh 0;
+    }
+    .middle2 {
+        position: relative;
+        text-align: center;
+        margin: 1vh 0;
+    }
+    .left2 {
+        position: relative;
+        text-align: center;
+        margin: 1vh 0;
+    }
+    .rigth2 {
+        position: relative;
+        text-align: center;
+        margin: 1vh 0;
+    }
+    .middle3 {
+        position: relative;
+        text-align: center;
+        margin: 1vh 0;
+    }
+    .left3 {
+        position: relative;
+        text-align: center;
+        margin: 1vh 0;
+    }
+    .rigth3 {
+        position: relative;
+        text-align: center;
+        margin: 1vh 0;
+    }
+    .card {
+        cursor: pointer;
+        width: 50vw;
+        height: 90vh;
+        position: relative;
+    }
+    .front {
+        transform: perspective(0) rotateY(0);
+    }
+    .back {
+        display: none;
+    }
+    .card:hover>.front {
+        transform: perspective(0) rotateY(0)
+    }
+    h2 {
+        font-size: 1.3em;
+        border-bottom: 0.5vh solid #f3a571;
+        border-top: 0.5vh solid #f3a571;
+    }
 }

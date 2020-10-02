@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap"
+    rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster une recette</title>
+    <link rel="stylesheet" typetext="css" href="reset.css" />
+    <link rel="stylesheet" href="postRecipe.css">
+</head>
+<body>
+    <div id="proposerRecette">
+      <h1 id="mainTitle">Propose ta recette</h1>
+      <form id="recipeForm">
+        <fieldset>
+            <legend>Le cuisinier</legend>
+            <label for="userName">Ton nom :</label><br />
+            <input type="text" id="userName" name="userName"><br />
+            <label for="experience">Ton expérience :</label><br />
+            <textarea
+            id="experience"
+            name="experience"
+            placeholder="Parle nous de toi..."
+            rows="10"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>La super recette</legend>
+            <label for="userRecipe">Ta recette :</label><br />
+            <input type="text" id="userRecipe" name="userRecipe" /><br />
+            <label for="ingredients">Les ingrédients :</label><br />
+          <textarea
+            id="ingredients"
+            name="ingredients"
+            placeholder="N'oublie pas ton ingrédient secret :p"
+            rows="10"
+          ></textarea><br />
+          <label for="detailRecipe">Détaille nous ta recette :</label><br />
+          <textarea
+            id="detailRecipe"
+            name="detailRecipe"
+            placeholder="Détaille toutes les étapes de ta recette..."
+            rows="10"
+          ></textarea><br />
+            <label for="img">Select image:</label>
+            <input type="file" id="img" name="img" accept="image/*"><br />
+        </fieldset>
+          <button type="submit" class="buttonRecipe">Envoyer</button>
+        </form>
+      </div>
+</body>
+</html>

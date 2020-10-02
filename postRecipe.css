@@ -1,0 +1,98 @@
+/* Formulaire - poster une recette */
+* {
+    font-family: 'Slabo 27px', serif;
+    color: #3d3d3d;
+}
+
+#proposerRecette {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./photos/fondForm.jpg);
+    background-size: cover;
+    width: 80%;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+#recipeForm {
+    opacity: 0.80;
+    margin-top: 1vh;
+    padding: 0 3em;
+}
+
+#recipeForm input {
+    margin:auto;
+}
+
+
+#mainTitle {
+    font-size: 4em;
+    text-align: center;
+    color: #f5cd79;
+    text-shadow: 1px 1px 2px black;
+}
+
+legend {
+    font-size: 2.5em;
+    color: #fffaf5;
+    text-shadow: 1px 1px 2px black;
+    text-align: start;
+    margin-left: 5%;
+}
+
+label {
+    font-size: 2em;
+    color: #f5cd79;
+    text-shadow: 1px 1px 2px black;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    background: white;
+    border: none;
+    padding: 0.5vw 0.5vw;
+    margin-bottom: 0.5vw;
+    font-size: 1.3em;
+}
+
+#userName {
+  border-radius: 5px;
+  background: white;
+  border: none;
+  padding: 0.5vw 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+#userRecipe {
+  border-radius: 5px;
+  background: white;
+  border: none;
+  padding: 0.5vw 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+#img {
+    border-radius: 5px;
+    background: white;
+    border: none;
+    padding-right: 2vw;
+}
+
+button {
+  border-radius: 5px;
+  background: #789E0A;
+  border: none;
+  padding: 1vw 2vw;
+  margin: 5vh;
+}
+
+button:hover {
+    cursor: pointer;
+}

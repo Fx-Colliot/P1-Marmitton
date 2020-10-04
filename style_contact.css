@@ -1,0 +1,60 @@
+body {
+  background-image: url("photos/serviette_grd.jpg");
+}
+
+section > #boite {
+  font-size: 2em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  color: #f5cd79;
+  margin-top: 5vh;
+}
+
+#formulaire {
+  text-align: center;
+  font-size: 1.8em;
+  color: #f5cd79;
+  margin-top: 2vh;
+}
+
+#boite {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25vh;
+}
+
+#name {
+  width: 12vw;
+  height: 4vh;
+  margin-left: 5vw;
+  border: 3px solid #f5cd79;
+  border-radius: 10px;
+}
+
+#email {
+  width: 15vw;
+  height: 4vh;
+  margin-top: 3vh;
+  margin-left: 5vw;
+  border: 3px solid #f5cd79;
+  border-radius: 10px;
+}
+
+#message {
+  width: 30vw;
+  height: 10vh;
+  margin-top: 3vh;
+  margin-left: 5vw;
+  border: 3px solid #f5cd79;
+  border-radius: 10px;
+}
+
+#envoyer {
+  margin-left: 5vw;
+  height: 4vh;
+  border: 3px solid #f5cd79;
+  border-radius: 10px 100px / 120px;
+}

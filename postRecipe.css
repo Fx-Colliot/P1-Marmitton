@@ -22,7 +22,7 @@
 }
 
 #recipeForm input {
-    margin:auto;
+    width: 100%;
 }
 
 
@@ -31,6 +31,7 @@
     text-align: center;
     color: #f5cd79;
     text-shadow: 1px 1px 2px black;
+    margin-bottom: 5vh;
 }
 
 legend {
@@ -38,7 +39,7 @@ legend {
     color: #fffaf5;
     text-shadow: 1px 1px 2px black;
     text-align: start;
-    margin-left: 5%;
+    margin-left: -2%;
 }
 
 label {
@@ -46,10 +47,6 @@ label {
     color: #f5cd79;
     text-shadow: 1px 1px 2px black;
     text-align: left;
-}
-
-input {
-    width: 100%;
 }
 
 textarea {
@@ -82,7 +79,7 @@ textarea {
     border-radius: 5px;
     background: white;
     border: none;
-    padding-right: 2vw;
+    padding-right: 1vw;
 }
 
 button {
@@ -90,7 +87,9 @@ button {
   background: #789E0A;
   border: none;
   padding: 1vw 2vw;
-  margin: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 4vh;
+  margin-left: 45%
 }
 
 button:hover {

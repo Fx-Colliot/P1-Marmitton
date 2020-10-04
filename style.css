@@ -266,69 +266,6 @@ header.sticky ul li a {
     margin-top: 1vh;
 }
 
-<<<<<<< HEAD
-
-=======
-
-/* Formulaire - poster une recette */
-
-#proposerRecette {
-    background-color: #f5cd79;
-    flex: 3;
-    margin: 1vw 0;
-    border-radius: 10px;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 6px -6px #777;
-}
-
-#proposerRecette>p {
-    font-size: 2vw;
-    text-align: center;
-    margin-top: 1vh;
-}
-
-#recipeForm {
-    text-align: left;
-    margin-top: 1vh;
-    padding: 0 3em;
-}
-
-#userName {
-    border-radius: 5px;
-    background: white;
-    border: none;
-    padding: 0.5vw 1vw;
-    margin-bottom: 0.5vw;
-}
-
-#userRecipe {
-    border-radius: 5px;
-    background: white;
-    border: none;
-    padding: 0.5vw 1vw;
-    margin-bottom: 0.5vw;
-}
-
-#detailRecipe {
-    border-radius: 5px;
-    background: white;
-    border: none;
-    padding: 0.5vw 1vw;
-    margin-bottom: 0.5vw;
-}
-
-button {
-    border-radius: 5px;
-    background: #e77f67;
-    border: none;
-    padding: 1vw 2vw;
-}
-
-button:hover {
-    cursor: pointer;
-}
->>>>>>> d5e77d9cd6388a4c19810c82ab81827fb5cfcc93
 
 
 /* BANDEAU DE GAUCHE */

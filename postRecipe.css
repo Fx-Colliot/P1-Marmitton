@@ -1,14 +1,19 @@
 /* Formulaire - poster une recette */
+@font-face {
+  font-family: Parisienne;
+  src: url("./Parisienne.ttf");
+}
+
 * {
   font-family: "Slabo 27px", serif;
 }
 
 #header ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 body {
-  background-color: #f6e2c8;
+  background-image: url(https://images5.alphacoders.com/109/1093598.jpg);
 }
 
 #header ul li {
@@ -30,12 +35,7 @@ body {
   margin-right: auto;
   margin-top: 4vh;
   margin-bottom: 5vh;
-  background-image: url(./photos/fondForm.jpg);
-  background-size: cover;
   width: 80%;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -6px #777;
   border-radius: 1em;
   padding: 3vh 0;
 }

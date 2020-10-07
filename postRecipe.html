@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Poster une recette</title>
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" typetext="css" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="postRecipe.css" />
   </head>
@@ -49,7 +49,7 @@
 
     <h1 id="mainTitle">Propose ta recette</h1>
     <div id="proposerRecette">
-      <form id="recipeForm">
+      <form id="recipeForm" name="recipeForm" onsubmit="return(validate())">
         <fieldset>
           <legend>Le cuisinier</legend>
           <label for="userName">Ton nom :</label><br />
@@ -169,6 +169,7 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="header.js"></script>
     <script type="text/javascript" src="postRecipe.js"></script>
   </body>
 </html>

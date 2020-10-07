@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.socials{
+    color: white;
+}
+
 .logo-text span {
     color: aqua;
 }
@@ -106,4 +110,46 @@ h2 {
 
 h1 {
     font-size: 2em;
+}
+
+@media screen and (max-width: 940px) {
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+    #header {
+        display: none;
+    }
+    .footer-bottom {
+        display: none;
+    }
+    .footer {
+        height: 100%;
+        background-color: #303036;
+    }
+    .footer h2 {
+        border-bottom: none;
+        border-top: none;
+    }
+    .footer .footer-content .about .socials a {
+        height: 4vh;
+        width: 9vw;
+        justify-content: center;
+    }
+    .links {
+        height: 100%;
+        background-color: #303036;
+    }
+    .contact-form {
+        height: 100%;
+        background-color: #303036;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .footer .footer-content .about .socials a {
+        height: 5vh;
+        width: 9vw;
+        justify-content: center;
+    }
 }

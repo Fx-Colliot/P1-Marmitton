@@ -5,6 +5,10 @@
     color: #3d3d3d;
 }
 
+#header ul li {
+    list-style-type: none;
+}
+
 body {
     background-color: #F6E2C8;
 }

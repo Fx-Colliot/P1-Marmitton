@@ -19,6 +19,14 @@ main {
   list-style-type: none;
 }
 
+#padding-banner {
+    margin-top: 1vh;
+}
+
+#tiret {
+    color: lightgray;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -38,13 +46,13 @@ header.sticky {
 }
 
 header .logo {
-  position: relative;
-  font-weight: 700;
-  color: lightgray;
-  text-decoration: none;
-  font-size: 3em;
-  letter-spacing: 2px;
-  transition: 0.6s ease;
+    position: relative;
+    font-weight: 700;
+    color: #f3a571;
+    text-decoration: none;
+    font-size: 3em;
+    letter-spacing: 2px;
+    transition: 0.6s ease;
 }
 
 header .sticky .logo {
@@ -160,12 +168,12 @@ header.sticky ul li a {
 /* GROS BLOCS //////*/
 
 #bandeauGauche {
-  border-radius: 0 0 25px 25px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
 }
 
 #recettesGrossir {

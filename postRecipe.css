@@ -3,6 +3,10 @@
   font-family: "Slabo 27px", serif;
 }
 
+#header ul li {
+    list-style-type: none;
+}
+
 body {
   background-color: #f6e2c8;
 }

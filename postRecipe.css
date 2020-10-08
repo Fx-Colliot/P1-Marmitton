@@ -1,0 +1,118 @@
+/* Formulaire - poster une recette */
+@font-face {
+  font-family: "Parisienne";
+  src: url("./Parisienne.ttf");
+}
+
+* {
+  font-family: "Slabo 27px", serif;
+}
+
+#header ul li {
+  list-style-type: none;
+}
+
+body {
+  background-image: url(https://images5.alphacoders.com/109/1093598.jpg);
+}
+
+#header ul li {
+  list-style-type: none;
+}
+
+#mainTitle {
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 2vh;
+  margin-top: 5vh;
+  padding-bottom: 3vh;
+  border-bottom: #3d3d3d solid 2px;
+  font-family: "Parisienne";
+  color: #3d3d3d;
+}
+
+#proposerRecette {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4vh;
+  margin-bottom: 5vh;
+  width: 80%;
+  border-radius: 1em;
+  padding: 3vh 0;
+}
+
+#recipeForm {
+  opacity: 0.8;
+  margin-top: 1vh;
+  padding: 0 3em;
+}
+
+#recipeForm input {
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+legend {
+  font-family: "Parisienne";
+  font-size: 2.5em;
+  color: #fffaf5;
+  text-shadow: 1px 1px 2px black;
+  text-align: start;
+  margin-left: -2%;
+  padding-bottom: 2vh;
+}
+
+label {
+  font-size: 1.5em;
+  color: #f5cd79;
+  text-shadow: 1px 1px 2px black;
+  text-align: left;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  background: white;
+  border: none;
+  padding: 0.5vw 0.5vw;
+  margin-bottom: 2vh;
+  font-size: 1.2em;
+}
+
+#userName {
+  border-radius: 5px;
+  background: white;
+  border: none;
+  padding: 0.5vw 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+#userRecipe {
+  border-radius: 5px;
+  background: white;
+  border: none;
+  padding: 0.5vw 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+#img {
+  border-radius: 5px;
+  background: white;
+  border: none;
+  padding-right: 1vw;
+}
+
+.buttonRecipe {
+  border-radius: 5px;
+  background: #5f5153;
+  color: white;
+  border: none;
+  padding: 1vw 2vw;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  margin-left: 45%;
+}
+
+button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,77 @@
+/*Formulaire*/
+
+main {
+  background-image: url("photos/serviette_grd.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+section > #boite {
+  font-size: 2em;
+}
+
+main > h1 {
+  text-align: center;
+  font-size: 12vh;
+  color: white;
+}
+
+input {
+  font-size: 3vh;
+}
+
+#formulaire_contact {
+  text-align: center;
+  font-size: 4vh;
+  color: white;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  background: linear-gradient(#b4a18f, #919191);
+}
+
+#boite {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+#name {
+  width: 30vw;
+  height: 7vh;
+  margin-left: 3vw;
+  border-radius: 10px;
+}
+
+#email {
+  width: 30vw;
+  height: 7vh;
+  margin-top: 2vh;
+  margin-left: 3vw;
+  border-radius: 10px;
+}
+textarea {
+  font-size: 3vh;
+}
+
+#message {
+  width: 60vw;
+  height: 15vh;
+  margin-top: 10vh;
+  margin-left: 3vw;
+  border-radius: 10px;
+}
+
+#envoyer {
+  margin-left: 3vw;
+  margin-top: 1vh;
+  height: 5.5vh;
+  border-radius: 10px 100px / 120px;
+}
+
+@media screen and (max-width: 940px) {
+  #email,
+  #name,
+  #message {
+    width: 95%;
+  }
+}

@@ -185,9 +185,6 @@ header.sticky ul li a {
     margin-top: 1vh;
 }
 
-
-/* BANDEAU DE GAUCHE */
-
 .tbanner {
     font-size: 2em;
     border-bottom: 0.5vh solid #f3a571;
@@ -233,51 +230,6 @@ h3 {
 
 /* Cards */
 
-.middle {
-    position: relative;
-    text-align: center;
-}
-
-.left {
-    position: relative;
-    text-align: center;
-}
-
-.rigth {
-    position: relative;
-    text-align: center;
-}
-
-.middle2 {
-    position: relative;
-    text-align: center;
-}
-
-.left2 {
-    position: relative;
-    text-align: center;
-}
-
-.rigth2 {
-    position: relative;
-    text-align: center;
-}
-
-.middle3 {
-    position: relative;
-    text-align: center;
-}
-
-.left3 {
-    position: relative;
-    text-align: center;
-}
-
-.rigth3 {
-    position: relative;
-    text-align: center;
-}
-
 .card {
     cursor: pointer;
     width: 20vw;
@@ -290,7 +242,9 @@ h3 {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    /* cache ce qui est en dehors de la card */
     backface-visibility: hidden;
+    /* cache l'arrière tant qu'on ne passe pas dessus */
     position: absolute;
     transition: 0.6s linear;
     border-radius: 10%;
@@ -311,19 +265,19 @@ h3 {
     border: solid rgb(82, 81, 81) 1px;
 }
 
-.back-content {
-    color: #2c3e50;
-    width: 100%;
-    height: 60%;
-    margin-top: 40%;
-}
-
 .card:hover>.front {
     transform: perspective(600px) rotateY(-180deg);
 }
 
 .card:hover>.back {
     transform: perspective(600px) rotateY(0deg);
+}
+
+.back-content {
+    color: #2c3e50;
+    width: 100%;
+    height: 60%;
+    margin-top: 40%;
 }
 
 .title {

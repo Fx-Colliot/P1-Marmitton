@@ -1,9 +1,6 @@
 document.addEventListener("scroll", function() {
     let header = document.querySelector("nav");
     header.classList.toggle("sticky", window.scrollY > 0)
-<<<<<<< HEAD
-})
-=======
 });
 
 const navSlide = () => {
@@ -12,14 +9,14 @@ const navSlide = () => {
     const navLinks = document.querySelectorAll('.nav-links li');
     const loupe = document.querySelector('.search-box');
 
-    burger.addEventListener('click', ()=> {   
+    burger.addEventListener('click', () => {
         //toggle now
         nav.classList.toggle('nav-active');
         loupe.classList.toggle('disparition')
 
         //animate links
         navLinks.forEach((link, index) => {
-            if(link.style.animation) {
+            if (link.style.animation) {
                 link.style.animation = ''
             } else {
                 link.style.animation = `navLinkFade 0.6s ease forwards ${index / 7 + 0.5}s`
@@ -30,9 +27,8 @@ const navSlide = () => {
     });
 }
 
-const app =()=>{
+const app = () => {
     navSlide()
 }
 
 app()
->>>>>>> eec3e974360429fe037e60205b03ff12435d3181

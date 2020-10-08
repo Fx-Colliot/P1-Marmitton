@@ -12,9 +12,13 @@
     color: aqua;
 }
 
-a{
+.links ul a{
     color: gray;
     text-decoration: none;
+}
+
+.socials a {
+    color: gray;
 }
 
 .footer {
@@ -116,9 +120,6 @@ h1 {
     .footer-content {
         display: flex;
         flex-direction: column;
-    }
-    #header {
-        display: none;
     }
     .footer-bottom {
         display: none;

@@ -99,6 +99,7 @@
     height: 8vh;
     border: none;
     width: 90%;
+    font-size: 1rem;
 }
 
 .btn {
@@ -149,7 +150,7 @@ h1 {
 
 @media screen and (max-width: 640px) {
     .footer .footer-content .about .socials a {
-        height: 4vh;
+        height: 5vh;
         width: 9vw;
         justify-content: center;
     }

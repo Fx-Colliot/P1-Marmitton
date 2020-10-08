@@ -383,6 +383,7 @@ h3 {
         opacity: 0;
         padding: 4.5vh 0;
     }
+
     .burger {
         display: block;
         padding-bottom: 10px;
@@ -391,6 +392,7 @@ h3 {
         padding: 0;
         display: flex;
         align-items: flex-end;
+        background: #303036;
     }
     .nav-active {
         transform: translateX(0%);

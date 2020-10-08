@@ -32,31 +32,31 @@ input {
 #boite {
   display: flex;
   flex-direction: column;
-  margin-top: 20vh;
+  margin-top: 10vh;
 }
 
 #name {
-  width: 20vw;
+  width: 30vw;
   height: 7vh;
   margin-left: 3vw;
   border-radius: 10px;
 }
 
 #email {
-  width: 20vw;
+  width: 30vw;
   height: 7vh;
-  margin-top: 1vh;
+  margin-top: 2vh;
   margin-left: 3vw;
   border-radius: 10px;
 }
 textarea {
-  font-size: 1em;
+  font-size: 3vh;
 }
 
 #message {
-  width: 50vw;
-  height: 30vh;
-  margin-top: 8vh;
+  width: 60vw;
+  height: 15vh;
+  margin-top: 10vh;
   margin-left: 3vw;
   border-radius: 10px;
 }
@@ -66,4 +66,12 @@ textarea {
   margin-top: 1vh;
   height: 5.5vh;
   border-radius: 10px 100px / 120px;
+}
+
+@media screen and (max-width: 940px) {
+  #email,
+  #name,
+  #message {
+    width: 95%;
+  }
 }

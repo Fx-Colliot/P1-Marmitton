@@ -14,20 +14,20 @@
     <link rel="stylesheet" typetext="css" href="reset.css" />
     <link rel="stylesheet" typetext="css" href="style.css" />
     <link rel="stylesheet" typetext="css" href="style_contact.css" />
+    <link rel="stylesheet" typetext="css" href="footer.css" />
+
     <title>Contactez nous</title>
   </head>
 
   <body>
     <header id="header">
-      <a href="" class="logo">Logo</a>
-      <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#recettesMaigrir">Recette maigrir</a></li>
-          <li><a href="#recettesGrossir">Recette grossir</a></li>
-          <li><a href="#recettesWild">Recette wilders</a></li>
-          <li><a href="home">Recette</a></li>
-          <li><a href="about">About us</a></li>
-          <li><a href="home">Login</a></li>
+      <a href="" class="logo">Marmi<span id="tiret">-</span>wild</a>
+      <ul class="nav-h">
+          <li><a href="#recettesMaigrir">Recettes healthy</a></li>
+          <li><a href="#recettesGrossir">Recettes plaisir</a></li>
+          <li><a href="#recettesWild">Recettes wilders</a></li>
+          <li><a href="about">Nous contacter</a></li>
+          <li><a href="home">Connexion</a></li>
       </ul>
   </header>
   <div class="search-box">
@@ -37,50 +37,45 @@
       </a>
   </div>
   <section class="banner" id="home">
-      <h2>Retrouver les meilleurs <span>recettes <br></span>pour votre famille</h2>
+      <h2 class="tbanner">Retrouvez les meilleurs <span>recettes <br></span>pour votre famille</h2>
   </section>
+  <div class="linear-gradient">
+  <div id="formulaire_contact">
+    <h1>Nous vous écoutons.</h1>
 
-      
+    <p>
+      Parce que le retour sur vos experiences est important pour nous.
+    </p>
+  </div>
+  </div>
+
     
     <main>
-      <h1>Nous vous écoutons</h1>
       <section id="contact">
-        <div id="formulaire_contact">
-          <p>
-            Parce que le retour sur vos experiences est important pour nous.
-          </p>
-        </div>
+        
 
         <div id="boite">
-          <!--<form method="post" action="mailto:marmiwild@ex.com">-->
-            <!-- <id="saisie_nom">-->
-              <!--<label for="name">Votre nom: </label>-->
+     
               <input
                 type="text"
                 placeholder="votre nom"
                 id="name"
                 name="name"
               />
-          <!--</div->-->
-
-            <!--<div id="saisie_mail">-->
-              <!--<label for="email">Votre email:</label>-->
+       
               <input
                 type="email"
                 placeholder="votre email"
                 name="email"
                 id="email"
               />
-            <!--</div>-->
-
-            <!--<div id="saisie_message">-->
-              <!--<label for="message"> placeholder= "Saisissez votre message</label>-->
+          
               <textarea
                 name="message"
                 placeholder="Saisissez votre message"
                 id="message"
               ></textarea>
-            <!--</div>-->
+        
 
             <div class="saisie_button">
               <input
@@ -95,6 +90,72 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="footer">
+          <div class="footer-content">
+
+              <div class="footer-section about">
+                  <h1 class="logo-text"><span>Mar</span>miWild</h1>
+                  <br>
+                  <p>
+                      MarmiWild est le premier site internet de cuisine en France avec 12,8 millions de visiteurs uniques en France, qui recense plus de 71 890 recettes de cuisine. Les membres du site, dans lequel l'inscription est gratuite, peuvent apporter des commentaires concernant les recettes présentes et proposer leurs propres recettes.
+                  </p>
+                  <div class="contact">
+                      <br>
+                      <span><i class="fas fa-phone"></i>&nbsp; 253-152-374</span>
+                      <br>
+                      <span><i class="fas fa-envelope"></i>&nbsp; MarmiWild@gmail.com</span>
+                  </div>
+                  <br>
+                  <div class="socials">
+                      <a href="#"><i class="fab fa-facebook"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+              </div>
+              <div class="footer-section links">
+                  <h2>Links</h2>
+                  <br>
+                  <ul>
+                      <a href="#">
+                          <li>Events</li>
+                      </a>
+                      <a href="#">
+                          <li>L'équipe</li>
+                      </a>
+                      <a href="#">
+                          <li>Recettes</li>
+                      </a>
+                      <a href="#">
+                          <li>Gallerie</li>
+                      </a>
+                      <a href="#">
+                          <li>Termes et conditions</li>
+                      </a>
+                  </ul>
+              </div>
+              <div class="footer-section contact-form">
+                  <h2>Votre avis</h2>
+                  <br>
+                  <form action="index.html" method="post">
+                      <input type="email" name="email" class="text-input contact-input" placeholder="Votre adresse mail...">
+                      <textarea name="message" class="text-input contact-input" id="" cols="30" rows="10" placeholder="Votre message..."></textarea>
+                      <button type="submit" class="btn btn-big">
+                          <i class="fas fa-envelope"></i>
+                          Envoyer
+                      </button>
+                  </form>
+              </div>
+          </div>
+          <div class="footer-bottom">
+          &copy; Wildcodeschool.com | Designed by Magicians
+          </div>
+      </div>
+  </footer>
+
+  <script type="text/javascript" src="header.js"></script>
+
+  
   </body>
 </html>

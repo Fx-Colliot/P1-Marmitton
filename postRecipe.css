@@ -1,6 +1,6 @@
 /* Formulaire - poster une recette */
 @font-face {
-  font-family: Parisienne;
+  font-family: "Parisienne";
   src: url("./Parisienne.ttf");
 }
 
@@ -21,13 +21,14 @@ body {
 }
 
 #mainTitle {
-  font-size: 2em;
+  font-size: 4em;
   text-align: center;
-  text-shadow: 1px 1px 2px black;
   margin-bottom: 2vh;
   margin-top: 5vh;
   padding-bottom: 3vh;
   border-bottom: #3d3d3d solid 2px;
+  font-family: "Parisienne";
+  color: #3d3d3d;
 }
 
 #proposerRecette {
@@ -52,7 +53,8 @@ body {
 }
 
 legend {
-  font-size: 2em;
+  font-family: "Parisienne";
+  font-size: 2.5em;
   color: #fffaf5;
   text-shadow: 1px 1px 2px black;
   text-align: start;

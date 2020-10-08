@@ -73,14 +73,14 @@ td {
     border-radius: 50%;
 }
 
-ul {
+.list-ingredients {
     margin-top: 10px;
     margin-bottom: 20px;
     padding-left: 0;
     font-size: 1.3em;
 }
 
-li {
+.list-ingredients li {
     list-style-type: none;
 }
 

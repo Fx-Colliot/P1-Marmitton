@@ -102,7 +102,7 @@ textarea {
   padding-right: 1vw;
 }
 
-button {
+.buttonRecipe {
   border-radius: 5px;
   background: #5f5153;
   color: white;

@@ -452,7 +452,7 @@ h3 {
     right: 0;
     top: 8vh;
     height: 92vh;
-    background-color: #4e4349;
+    background-color: #303036;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -490,7 +490,7 @@ h3 {
     color: white;
   }
   .nav.sticky {
-    background: #4e4349;
+    background: #303036;
   }
 }
 

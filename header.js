@@ -7,7 +7,7 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
-    const loupe = document.querySelector('.search-box')
+    const loupe = document.querySelector('.search-box');
 
     burger.addEventListener('click', ()=> {   
         //toggle now

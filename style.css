@@ -43,6 +43,10 @@ main {
   color: lightgray;
 }
 
+.home {
+  display: none;
+}
+
 .nav {
   position: fixed;
   width: 100%;
@@ -435,6 +439,10 @@ h3 {
     font-size: 1.3em;
     border-bottom: 0.5vh solid #f3a571;
     border-top: 0.5vh solid #f3a571;
+  }
+
+  .home {
+    display: block;
   }
 
   .nav-links {

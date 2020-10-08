@@ -1,428 +1,419 @@
 * {
-    margin: 0;
-    font-family: "Slabo 27px", serif;
-    box-sizing: border-box;
+  margin: 0;
+  font-family: "Slabo 27px", serif;
+  box-sizing: border-box;
 }
 
 main {
-    padding: 5vh 10vw 5vh 10vw;
+  padding: 5vh 10vw 5vh 10vw;
 }
 
 .bg-img {
-    background-image: url(https://images5.alphacoders.com/109/1093598.jpg);
-    background-position: cover;
+  background-image: url(https://images5.alphacoders.com/109/1093598.jpg);
+  background-position: cover;
 }
-
 
 /* Header */
 
 .nav-h {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #padding-banner {
-    margin-top: 1vh;
+  margin-top: 1vh;
 }
 
 #tiret {
-    color: lightgray;
+  color: lightgray;
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 100px;
-    transition: 0.6s ease;
-    top: 0;
-    left: 0;
-    z-index: 3;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 5vh;
+  transition: 0.6s ease;
+  top: 0;
+  left: 0;
+  z-index: 3;
 }
 
 #header ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 header.sticky {
-    padding: 5px 100px;
-    background: #fff;
+  padding: 5px 100px;
+  background: #fff;
 }
 
 header .logo {
-    position: relative;
-    font-weight: 700;
-    color: #f3a571;
-    text-decoration: none;
-    font-size: 3em;
-    letter-spacing: 2px;
-    transition: 0.6s ease;
+  position: relative;
+  font-weight: 700;
+  color: #f3a571;
+  text-decoration: none;
+  font-size: 3em;
+  letter-spacing: 2px;
+  transition: 0.6s ease;
 }
 
 header .sticky .logo {
-    color: lightgray;
+  color: lightgray;
 }
 
 header ul {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header ul li {
-    position: relative;
+  position: relative;
 }
 
 header a:hover {
-    color: #f5cd79;
-    text-decoration: underline;
-    transition: 0.6s ease;
+  color: #f5cd79;
+  text-decoration: underline;
+  transition: 0.6s ease;
 }
 
 header ul li a {
-    position: relative;
-    text-decoration: none;
-    color: #eeaf79;
-    letter-spacing: 2px;
-    transition: 0.6s ease;
-    margin: 0 20px;
-    font-size: 20px;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px black;
+  position: relative;
+  text-decoration: none;
+  color: #eeaf79;
+  letter-spacing: 2px;
+  transition: 0.6s ease;
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
 }
 
 header.sticky ul li a {
-    color: #f5cd79;
+  color: #f5cd79;
 }
 
 .banner {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(./photos/banner.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 1px 2px 0px rgba(26, 26, 26, 1);
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./photos/banner.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 2px 0px rgba(26, 26, 26, 1);
 }
 
 .banner h2 span {
-    color: #f5cd79;
+  color: #f5cd79;
 }
 
 .banner h2 {
-    color: white;
-    font-size: 8vh;
-    text-align: center;
-    text-shadow: 1px 1px 2px black;
+  color: white;
+  font-size: 8vh;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
 }
-
 
 /* search */
 
 .search-box {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -85%);
-    background: #f5cd79;
-    border-radius: 40px;
-    padding: 10px;
-    z-index: 1;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+  background: #f5cd79;
+  border-radius: 40px;
+  padding: 10px;
+  z-index: 1;
 }
 
-.search-box:hover>.search-txt {
-    width: 240px;
-    padding: 0 6px;
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
 }
 
-.search-box:hover>.search-btn {
-    background: white;
+.search-box:hover > .search-btn {
+  background: white;
 }
 
 .search-btn {
-    color: #f5cd79;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s ease;
+  color: #f5cd79;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
 }
 
 .search-txt {
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s ease;
-    width: 0px;
-    line-height: 40px;
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s ease;
+  width: 0px;
+  line-height: 40px;
 }
-
 
 /* GROS BLOCS //////*/
 
 #bandeauGauche {
-    border-radius: 25px 25px 25px 25px;
+  border-radius: 25px 25px 25px 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+#recettesGrossir {
+  margin-top: 1vh;
+}
+
+/* BANDEAU DE GAUCHE */
+
+.tbanner {
+  font-size: 2em;
+  border-bottom: 0.5vh solid #f3a571;
+  border-top: 0.5vh solid #f3a571;
+}
+
+h3 {
+  font-size: 4ch;
+}
+
+/* RECETTES POUR PRENDRE DU POIDS */
+
+#listeRecettesGrossir {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 55vh;
+  padding-top: 2vh;
+}
+
+/* RECETTES POUR PERDRE DU POIDS */
+
+#listeRecettesMaigrir {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 55vh;
+  padding-top: 2vh;
+}
+
+/* RECETTES DE LA WILD */
+
+#listeRecettesWild {
+  display: flex;
+  justify-content: space-around;
+  height: 55vh;
+  padding-top: 2vh;
+}
+
+/* Cards */
+
+.middle {
+  position: relative;
+  text-align: center;
+}
+
+.left {
+  position: relative;
+  text-align: center;
+}
+
+.rigth {
+  position: relative;
+  text-align: center;
+}
+
+.middle2 {
+  position: relative;
+  text-align: center;
+}
+
+.left2 {
+  position: relative;
+  text-align: center;
+}
+
+.rigth2 {
+  position: relative;
+  text-align: center;
+}
+
+.middle3 {
+  position: relative;
+  text-align: center;
+}
+
+.left3 {
+  position: relative;
+  text-align: center;
+}
+
+.rigth3 {
+  position: relative;
+  text-align: center;
+}
+
+.card {
+  cursor: pointer;
+  width: 20vw;
+  height: 50vh;
+  position: relative;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: 0.6s linear;
+  border-radius: 10%;
+  box-shadow: 10px 15px 15px lightgray;
+}
+
+.front img {
+  height: 100%;
+}
+
+.front {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.back {
+  background: white;
+  transform: perspective(600px) rotateY(180deg);
+  border: solid rgb(82, 81, 81) 1px;
+}
+
+.back-content {
+  color: #2c3e50;
+  width: 100%;
+  height: 60%;
+  margin-top: 40%;
+}
+
+.card:hover > .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.title {
+  text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 940px) {
+  #bandeauGauche {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
-}
-
-#recettesGrossir {
-    margin-top: 1vh;
-}
-
-
-/* BANDEAU DE GAUCHE */
-
-.tbanner {
-    font-size: 2em;
+  }
+  #listeRecettesGrossir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+  }
+  #listeRecettesMaigrir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+  }
+  #listeRecettesWild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+  }
+  .middle {
+    position: relative;
+    text-align: center;
+    margin: 1vh 0;
+  }
+  .left {
+    position: relative;
+    text-align: center;
+    margin: 1vh 0;
+  }
+  .rigth {
+    position: relative;
+    text-align: center;
+    margin: 1vh 0;
+  }
+  .middle2 {
+    position: relative;
+    text-align: center;
+    margin: 1vh 0;
+  }
+  .left2 {
+    position: relative;
+    text-align: center;
+    margin: 1vh 0;
+  }
+  .rigth2 {
+    position: relative;
+    text-align: center;
+    margin: 1vh 0;
+  }
+  .middle3 {
+    position: relative;
+    text-align: center;
+    margin: 1vh 0;
+  }
+  .left3 {
+    position: relative;
+    text-align: center;
+    margin: 1vh 0;
+  }
+  .rigth3 {
+    position: relative;
+    text-align: center;
+    margin: 1vh 0;
+  }
+  .card {
+    cursor: pointer;
+    width: 50vw;
+    height: 90vh;
+    position: relative;
+  }
+  .front {
+    transform: perspective(0) rotateY(0);
+  }
+  .back {
+    display: none;
+  }
+  .card:hover > .front {
+    transform: perspective(0) rotateY(0);
+  }
+  h2 {
+    font-size: 1.3em;
     border-bottom: 0.5vh solid #f3a571;
     border-top: 0.5vh solid #f3a571;
-}
-
-h3 {
-    font-size: 4ch;
-}
-
-
-/* RECETTES POUR PRENDRE DU POIDS */
-
-#listeRecettesGrossir {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 55vh;
-    padding-top: 2vh;
-}
-
-
-/* RECETTES POUR PERDRE DU POIDS */
-
-#listeRecettesMaigrir {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 55vh;
-    padding-top: 2vh;
-}
-
-
-/* RECETTES DE LA WILD */
-
-#listeRecettesWild {
-    display: flex;
-    justify-content: space-around;
-    height: 55vh;
-    padding-top: 2vh;
-}
-
-
-/* Cards */
-
-.middle {
-    position: relative;
-    text-align: center;
-}
-
-.left {
-    position: relative;
-    text-align: center;
-}
-
-.rigth {
-    position: relative;
-    text-align: center;
-}
-
-.middle2 {
-    position: relative;
-    text-align: center;
-}
-
-.left2 {
-    position: relative;
-    text-align: center;
-}
-
-.rigth2 {
-    position: relative;
-    text-align: center;
-}
-
-.middle3 {
-    position: relative;
-    text-align: center;
-}
-
-.left3 {
-    position: relative;
-    text-align: center;
-}
-
-.rigth3 {
-    position: relative;
-    text-align: center;
-}
-
-.card {
-    cursor: pointer;
-    width: 20vw;
-    height: 50vh;
-    position: relative;
-}
-
-.front,
-.back {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    backface-visibility: hidden;
-    position: absolute;
-    transition: 0.6s linear;
-    border-radius: 10%;
-    box-shadow: 10px 15px 15px lightgray;
-}
-
-.front img {
-    height: 100%;
-}
-
-.front {
-    transform: perspective(600px) rotateY(0deg);
-}
-
-.back {
-    background: white;
-    transform: perspective(600px) rotateY(180deg);
-    border: solid rgb(82, 81, 81) 1px;
-}
-
-.back-content {
-    color: #2c3e50;
-    width: 100%;
-    height: 60%;
-    margin-top: 40%;
-}
-
-.card:hover>.front {
-    transform: perspective(600px) rotateY(-180deg);
-}
-
-.card:hover>.back {
-    transform: perspective(600px) rotateY(0deg);
-}
-
-.title {
-    text-align: center;
-}
-
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 940px) {
-    #bandeauGauche {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: white;
-    }
-    #listeRecettesGrossir {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 90vh;
-    }
-    #listeRecettesMaigrir {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 90vh;
-    }
-    #listeRecettesWild {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 90vh;
-    }
-    .middle {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .left {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .rigth {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .middle2 {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .left2 {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .rigth2 {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .middle3 {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .left3 {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .rigth3 {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .card {
-        cursor: pointer;
-        width: 50vw;
-        height: 90vh;
-        position: relative;
-    }
-    .front {
-        transform: perspective(0) rotateY(0);
-    }
-    .back {
-        display: none;
-    }
-    .card:hover>.front {
-        transform: perspective(0) rotateY(0);
-    }
-    h2 {
-        font-size: 1.3em;
-        border-bottom: 0.5vh solid #f3a571;
-        border-top: 0.5vh solid #f3a571;
-    }
+  }
 }

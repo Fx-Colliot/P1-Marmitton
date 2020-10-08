@@ -149,7 +149,7 @@ h1 {
 
 @media screen and (max-width: 640px) {
     .footer .footer-content .about .socials a {
-        height: 5vh;
+        height: 4vh;
         width: 9vw;
         justify-content: center;
     }

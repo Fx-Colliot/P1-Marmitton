@@ -325,69 +325,29 @@ h3 {
         flex-direction: column;
         align-items: center;
         height: 90vh;
+        margin-bottom: 2vh;
     }
     #listeRecettesMaigrir {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 90vh;
+        margin-bottom: 2vh;
     }
     #listeRecettesWild {
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 90vh;
-    }
-    .middle {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .left {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .rigth {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .middle2 {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .left2 {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .rigth2 {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .middle3 {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .left3 {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
-    }
-    .rigth3 {
-        position: relative;
-        text-align: center;
-        margin: 1vh 0;
+        margin-bottom: 2vh;
     }
     .card {
         cursor: pointer;
         width: 50vw;
         height: 90vh;
         position: relative;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
     }
     .front {
         transform: perspective(0) rotateY(0);

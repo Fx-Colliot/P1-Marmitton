@@ -1,218 +1,214 @@
 body {
-    background-image: url(https://images5.alphacoders.com/109/1093598.jpg);
+  background-image: url(https://images5.alphacoders.com/109/1093598.jpg);
 }
-
 
 /* GROS BLOCS //////*/
 
 #bandeauGauche {
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
 
 #titleRaclette {
-    text-align: center;
-    margin-top: 20px;
-    border-bottom: solid #f5cd79 2px;
-    border-top: solid #f5cd79 2px;
-    font-size: 4em;
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: solid #f5cd79 2px;
+  border-top: solid #f5cd79 2px;
+  font-size: 4em;
 }
 
 img {
-    width: 50vw;
-    height: auto;
-    border-radius: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 0;
+  width: 50vw;
+  height: auto;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
-
 
 /* Bandeau information préparation */
 
 table {
-    width: 100%;
-    margin-top: 4vh;
-    border-style: solid;
-    border-color: #f5cd79;
-    border-right-width: 0px;
-    border-left-width: 0px;
-    border-top-width: 3px;
-    border-bottom-width: 3px;
-    font-size: 1.3em;
+  width: 100%;
+  margin-top: 4vh;
+  border-style: solid;
+  border-color: #f5cd79;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  font-size: 1.3em;
 }
 
 th {
-    padding: 1%;
-    font-size: 1.4em;
+  padding: 1%;
+  font-size: 1.4em;
 }
 
 td {
-    text-align: center;
-    padding: 1%;
+  text-align: center;
+  padding: 1%;
 }
 
 #iconePlein {
-    display: inline-block;
-    margin-right: 3px;
-    width: 13px;
-    height: 13px;
-    background-color: #f5cd79;
-    border-radius: 50%;
+  display: inline-block;
+  margin-right: 3px;
+  width: 13px;
+  height: 13px;
+  background-color: #f5cd79;
+  border-radius: 50%;
 }
 
 #iconeVide {
-    display: inline-block;
-    margin-right: 3px;
-    width: 13px;
-    height: 13px;
-    background-color: #e9cfc7;
-    border-radius: 50%;
+  display: inline-block;
+  margin-right: 3px;
+  width: 13px;
+  height: 13px;
+  background-color: #e9cfc7;
+  border-radius: 50%;
 }
 
-ul {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding-left: 0;
-    font-size: 1.3em;
+.list-ingredient {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 0;
+  font-size: 1.3em;
 }
 
-li {
-    list-style-type: none;
+.list-ingredient li {
+  list-style-type: none;
 }
-
 
 /* Ingrédients et intérieur de recette */
 
 #recette {
-    display: flex;
-    flex-direction: row;
-    margin-top: 4vh;
-    padding-bottom: 5vh;
-    padding-left: 2vw;
+  display: flex;
+  flex-direction: row;
+  margin-top: 4vh;
+  padding-bottom: 5vh;
+  padding-left: 2vw;
 }
 
 #titreIngredient {
-    padding-bottom: 4vh;
-    font-size: 2em;
-    color: #f5cd79;
+  padding-bottom: 4vh;
+  font-size: 2em;
+  color: #f5cd79;
 }
 
 #ingredients {
-    flex: 1;
-    text-align: center;
-    margin-top: 5vh;
-    margin-bottom: auto;
-    margin-right: 5vw;
-    border-radius: 15px;
-    border: solid gray 1px;
-    box-shadow: 0 10px 6px -6px #777;
+  flex: 1;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: auto;
+  margin-right: 5vw;
+  border-radius: 15px;
+  border: solid gray 1px;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
 #recetteComplete {
-    flex: 3;
+  flex: 3;
 }
 
 .listeRecette {
-    clear: both;
-    list-style: none;
-    padding-left: 2%;
-    font-size: 1.3em;
-    margin-right: 5vw;
+  clear: both;
+  list-style: none;
+  padding-left: 2%;
+  font-size: 1.3em;
+  margin-right: 5vw;
 }
 
 .listeRecette li {
-    margin: 2em 0;
-    padding-top: 1em;
-    display: block;
-    position: relative;
-    counter-increment: inst;
+  margin: 2em 0;
+  padding-top: 1em;
+  display: block;
+  position: relative;
+  counter-increment: inst;
 }
 
 .listeRecette li::before {
-    content: counter(inst);
-    background: #f5cd79;
-    opacity: 0.5;
-    color: #fff;
-    font-size: 1em;
-    font-weight: 700;
-    font-style: italic;
-    text-shadow: 1px 1px rgba(255, 150, 0, 0.5);
-    border-radius: 0 0.675em 0.675em 0;
-    font-size: 1.5em;
-    text-align: center;
-    padding-top: 0;
-    padding-left: 2.25%;
-    left: -5%;
-    top: -0.65em;
-    height: 1.35em;
-    width: 1.35em;
-    position: absolute;
-    transition: all 0.2s ease-in-out;
-    z-index: 2;
+  content: counter(inst);
+  background: #f5cd79;
+  opacity: 0.5;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 1px 1px rgba(255, 150, 0, 0.5);
+  border-radius: 0 0.675em 0.675em 0;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 0;
+  padding-left: 2.25%;
+  left: -5%;
+  top: -0.65em;
+  height: 1.35em;
+  width: 1.35em;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  z-index: 2;
 }
 
 @media (min-width: 33em) {
-    .listeRecette li:before {
-        border-radius: 50%;
-        font-size: 1.5em;
-        height: 1.35em;
-        margin-left: 2.5%;
-        padding-left: 0;
-        padding-top: 0;
-        top: -0.15em;
-        width: 1.35em;
-        z-index: 2;
-    }
+  .listeRecette li:before {
+    border-radius: 50%;
+    font-size: 1.5em;
+    height: 1.35em;
+    margin-left: 2.5%;
+    padding-left: 0;
+    padding-top: 0;
+    top: -0.15em;
+    width: 1.35em;
+    z-index: 2;
+  }
 }
-
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 940px) {
-    #header {
-        display: none;
-    }
-    img {
-        width: 75vw;
-        margin-top: 1vh;
-    }
-    #recette {
-        flex-direction: column;
-    }
-    #ingredients {
-        margin-right: 2vw;
-        margin-left: auto;
-    }
-    table,
-    thead,
-    tbody,
-    tr,
-    th,
-    td {
-        display: block;
-    }
-    thead {
-        display: none;
-    }
-    td {
-        padding-left: 40vw;
-        position: relative;
-        margin-top: -1;
-        margin-bottom: 1vh;
-        margin-left: 7vw;
-    }
-    td::before {
-        content: attr(data-label);
-        padding: 5px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 130px;
-        display: flex;
-        align-items: center;
-    }
+  #header {
+    display: none;
+  }
+  img {
+    width: 75vw;
+    margin-top: 1vh;
+  }
+  #recette {
+    flex-direction: column;
+  }
+  #ingredients {
+    margin-right: 2vw;
+    margin-left: auto;
+  }
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    display: block;
+  }
+  thead {
+    display: none;
+  }
+  td {
+    padding-left: 40vw;
+    position: relative;
+    margin-top: -1;
+    margin-bottom: 1vh;
+    margin-left: 7vw;
+  }
+  td::before {
+    content: attr(data-label);
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    display: flex;
+    align-items: center;
+  }
 }

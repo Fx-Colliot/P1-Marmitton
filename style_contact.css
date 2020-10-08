@@ -4,29 +4,29 @@ main {
   background-image: url("photos/serviette_grd.jpg");
   background-size: cover;
   width: 100%;
-  margin: 0;
 }
 
 section > #boite {
   font-size: 2em;
 }
 
-h1 {
+main > h1 {
   text-align: center;
-  font-size: 7vh;
-  color: #eeaf79;
-  /*margin-top: 10vh;*/
+  font-size: 12vh;
+  color: white;
 }
 
 input {
-  font-size: 2vh;
+  font-size: 3vh;
 }
 
-#formulaire_contact > p {
+#formulaire_contact {
   text-align: center;
-  font-size: 3vh;
-  color: #eeaf79;
-  margin-top: 2vh;
+  font-size: 4vh;
+  color: white;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  background: linear-gradient(#b4a18f, #919191);
 }
 
 #boite {
@@ -37,35 +37,33 @@ input {
 
 #name {
   width: 20vw;
-  height: 5vh;
-  margin-left: 5vw;
-  /*border: 3px solid #f5cd79;*/
+  height: 7vh;
+  margin-left: 3vw;
   border-radius: 10px;
 }
 
 #email {
   width: 20vw;
-  height: 5vh;
+  height: 7vh;
   margin-top: 1vh;
-  margin-left: 5vw;
-  /*border: 3px solid #f5cd79;*/
+  margin-left: 3vw;
   border-radius: 10px;
 }
 textarea {
-  font-size: O.8em;
+  font-size: 1em;
 }
+
 #message {
-  width: 30vw;
-  height: 20vh;
+  width: 50vw;
+  height: 30vh;
   margin-top: 8vh;
-  margin-left: 5vw;
-  /*border: 3px solid #f5cd79;*/
+  margin-left: 3vw;
   border-radius: 10px;
 }
 
 #envoyer {
-  margin-left: 5vw;
-  height: 4vh;
-  /*border: 3px solid #f5cd79;*/
+  margin-left: 3vw;
+  margin-top: 1vh;
+  height: 5.5vh;
   border-radius: 10px 100px / 120px;
 }
